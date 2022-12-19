@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+    <h1>Expense Tracker</h1>
+
+    <h2>down below insert your weekly expenses</h2><br>
+    
+    <form id="new-form">
+    <span for="Payment">Payment Method:</span><br><br>
+    <select id="Payment">
+        <option value="CreditDebit">Credit or Debit Card</option>
+        <option value="Cash">Cash</option>
+        <option value="BankTransfer">Bank Transaction</option>
+        <option value="Paypal">Paypal</option>
+        <option value="Other">Other</option>
+    
+    </select><br>
+    <br>
+    <span for="Date">Date:</span><br><br>
+        <input type="date" id="Date"><br>
+    <br>
+    <span for="Name">Name:</span><br><br>
+        <input type="textbox" id="Name"><br>
+    <br>
+    <span for="Amount">Total Amount:</span><br><br>
+        <input type="textbox" id="Amount"><br><br>
+    <br>
+    </form><br>
+    <button id="Button">Add Expense to Table</button><br><br><br><br>
+
+    <table class="Table">
+        <thead>
+            <tr id="id">
+                <th class="table-head-name">Name</th>
+                <th class="table-head-payment">Payment Method</th>
+                <th class="table-head-total">Total Amount</th>
+                <th class="table-head-date">Date</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
